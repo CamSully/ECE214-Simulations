@@ -1,0 +1,21 @@
+***** NGspice Simulation of 'Lab2' (Lib: ECE214_2018)
+
+***** Specify the ECE 214 Spice models: 
+.include '../../../SpiceModels/ECE214_models.mod'
+
+***** Temperature
+.temp 27
+**** added line below using 'hspc_addline' function ****
+.tran 2.5e-08 0.00115 0.001 0
+
+***** Global variables
+.global gnd
+
+***** Parameters
+.param freq=40000
+ÈƐɘ̠Ϩߐྠᝰὀ✐丠鱀
+***** Simulation Options (should not need to change)
+.options post=1 delmax=5p relv=1e-6 reli=1e-6 relmos=1e-6 method=gear
+
+***** Have operating point information sent to output file
+.op
