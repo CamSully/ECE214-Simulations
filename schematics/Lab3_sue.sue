@@ -1,0 +1,46 @@
+proc SCHEMATIC_Lab3_sue {} {
+make R -orient R270 -name R3 -resistance 50 -origin {730 360}
+make C -name C2 -capacitance 101.1p -origin {1200 450}
+make R -orient RXY -name R2 -resistance 1meg -origin {1330 450}
+make C -name C3 -capacitance 13p -origin {1400 450}
+make R -orient R90 -name R1 -resistance res1 -origin {850 360}
+make C -name C0 -capacitance cap1 -origin {910 450}
+make C -name C1 -capacitance cap2 -origin {1100 450}
+make R -orient R90 -name R0 -resistance res2 -origin {1020 360}
+make name_net -name vout -origin {1100 360}
+make name_net -name vin -origin {790 360}
+make global -name GND -origin {1050 540}
+make C -name C4 -capacitance 101.1p -origin {790 450}
+make V_sin -name V0 -peak_voltage 2V -frequency 800 -origin {650 450}
+  make_wire 650 360 650 410
+  make_wire 650 490 650 540
+  make_wire 1400 360 1400 410
+  make_wire 1400 540 1400 490
+  make_wire 890 360 910 360
+  make_wire 980 360 910 360
+  make_wire 1100 490 1100 540
+  make_wire 1200 360 1200 410
+  make_wire 1200 490 1200 540
+  make_wire 1330 490 1330 540
+  make_wire 1330 360 1330 410
+  make_wire 1100 360 1100 410
+  make_wire 1060 360 1100 360
+  make_wire 1100 540 1200 540
+  make_wire 1100 360 1200 360
+  make_wire 1200 360 1330 360
+  make_wire 1330 360 1400 360
+  make_wire 1200 540 1330 540
+  make_wire 1330 540 1400 540
+  make_wire 910 360 910 410
+  make_wire 910 490 910 540
+  make_wire 790 360 770 360
+  make_wire 790 360 810 360
+  make_wire 1050 540 910 540
+  make_wire 1050 540 1100 540
+  make_wire 790 360 790 410
+  make_wire 790 490 790 540
+  make_wire 650 540 790 540
+  make_wire 790 540 910 540
+  make_wire 650 360 690 360
+}
+

@@ -1,0 +1,41 @@
+proc SCHEMATIC_Lab1_sue {} {
+make global -name GND -origin {770 310}
+make name_net -name vout -origin {770 150}
+make R -orient R90 -name R2 -resistance 50 -origin {250 150}
+make R -orient R90 -name R3 -resistance res -origin {410 150}
+make R -name R1 -resistance res -origin {490 220}
+make R -name R0 -resistance 1meg -origin {690 220}
+make C -name C0 -capacitance 101.1p -origin {330 220}
+make C -name C1 -capacitance 101.1p -origin {600 220}
+make C -name C2 -capacitance 13p -origin {830 220}
+make V_sin -name V0 -origin {100 220}
+make name_net -name v2 -origin {330 150}
+  make_wire 100 180 100 150
+  make_wire 330 150 290 150
+  make_wire 330 150 370 150
+  make_wire 830 290 830 260
+  make_wire 830 150 830 180
+  make_wire 490 150 600 150
+  make_wire 490 150 450 150
+  make_wire 600 150 690 150
+  make_wire 490 260 490 290
+  make_wire 600 290 490 290
+  make_wire 690 290 600 290
+  make_wire 770 290 770 310
+  make_wire 100 260 100 290
+  make_wire 490 150 490 180
+  make_wire 690 150 690 180
+  make_wire 690 260 690 290
+  make_wire 100 290 330 290
+  make_wire 330 290 490 290
+  make_wire 100 150 210 150
+  make_wire 330 260 330 290
+  make_wire 600 260 600 290
+  make_wire 600 150 600 180
+  make_wire 690 150 770 150
+  make_wire 770 150 830 150
+  make_wire 690 290 770 290
+  make_wire 770 290 830 290
+  make_wire 330 150 330 180
+}
+
