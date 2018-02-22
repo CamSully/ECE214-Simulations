@@ -1,11 +1,11 @@
-***** Spice Netlist for Cell 'Lab4_sue' *****
+***** Spice Netlist for Cell 'Lab4_prelab1_sue' *****
 
-************** Module Lab4_sue **************
+************** Module Lab4_prelab1_sue **************
 r0 vin n0 res1 noisy=0
 r1 n0 vout res2 noisy=0
-v1 n1 gnd dc='10' ac='1' 
-v2 n2 gnd dc='-10' ac='1' 
-v0 vin gnd dc 0v ac 1v sin('0v' '0.5' '10k' '0s') 
+v2 n2 gnd dc='-10' ac='0' 
+v1 n1 gnd dc='10' ac='0' 
+v0 vin gnd dc 0v ac 1v sin('0v' '0.5' '40k' '0s') 
 xi0 gnd n0 n1 n2 vout tl082 
 
 
@@ -14,7 +14,7 @@ xi0 gnd n0 n1 n2 vout tl082
 
 .include '../../../SpiceModels/ECE214_models.mod'
 .temp 27
-.tran 10u 125m 25m
+.ac dec 200 100 1e6
 .global gnd
 .param res1=1000
 .param res2=4700

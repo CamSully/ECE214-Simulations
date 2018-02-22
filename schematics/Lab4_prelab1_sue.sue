@@ -1,4 +1,4 @@
-proc SCHEMATIC_Lab4_sue {} {
+proc SCHEMATIC_Lab4_prelab1_sue {} {
 make name_net -name vin -origin {750 320}
 make global -name GND -origin {860 500}
 make name_net -orient R90 -name vout -origin {1120 370}
@@ -6,9 +6,9 @@ make R -orient R90 -name R0 -resistance res1 -origin {840 320}
 make R -orient R90 -name R1 -resistance res2 -origin {1000 270}
 make global -name GND -origin {1010 590}
 make global -orient RXY -name GND -origin {1010 330}
-make V_dc -orient RXY -name V1 -dc_voltage 10 -origin {1010 380}
-make V_dc -name V2 -dc_voltage -10 -origin {1010 550}
-make V_sin -name V0 -peak_voltage 0.5 -frequency 10K -origin {750 390}
+make V_dc -name V2 -dc_voltage -10 -ac_voltage 0 -origin {1010 550}
+make V_dc -orient RXY -name V1 -dc_voltage 10 -ac_voltage 0 -origin {1010 380}
+make V_sin -name V0 -peak_voltage 0.5 -frequency 40K -origin {750 390}
 make TL082 -name xi0 -origin {950 430}
   make_wire 900 320 880 320
   make_wire 900 270 960 270
@@ -17,15 +17,15 @@ make TL082 -name xi0 -origin {950 430}
   make_wire 900 490 860 490
   make_wire 750 430 750 450
   make_wire 750 320 800 320
+  make_wire 1010 330 1010 340
+  make_wire 750 450 860 450
+  make_wire 750 320 750 350
+  make_wire 1120 270 1120 370
+  make_wire 1120 370 1120 470
   make_wire 860 450 860 490
   make_wire 860 490 860 500
-  make_wire 1120 270 1120 370
+  make_wire 1010 420 1010 430
   make_wire 900 270 900 320
   make_wire 900 320 900 450
-  make_wire 1010 330 1010 340
-  make_wire 1010 420 1010 430
-  make_wire 750 320 750 350
-  make_wire 750 450 860 450
-  make_wire 1120 370 1120 470
 }
 

@@ -6,16 +6,10 @@
 ***** Temperature
 .temp 27
 **** added line below using 'hspc_addline' function ****
-.tran 10u 125m 25m
+.dc V0 10 0 -.1
 
 ***** Global variables
 .global gnd
-
-***** Parameter variables
-.param res1=16000
-.param res2=330000
-.param cap1=1e-08
-.param cap2=4.7e-10
 
 ***** Simulation Options (should not need to change)
 .options post=1 delmax=5p relv=1e-6 reli=1e-6 relmos=1e-6 method=gear

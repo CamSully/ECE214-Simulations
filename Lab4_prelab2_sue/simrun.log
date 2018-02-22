@@ -1,0 +1,59 @@
+
+Circuit: ***** spice netlist for cell 'lab4_prelab2_sue' *****
+
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+No. of Data Columns : 31  
+
+No. of Data Rows : 101
+No. of Data Columns : 30  
+
+No. of Data Rows : 1
+CPU time since last call: 0.012 seconds.
+
+Total CPU time: 0.012 seconds.
+
+Total DRAM available = 15954.636719 MB.
+DRAM currently available = 13489.496094 MB.
+Total ngspice program size = 9.999023 MB.
+Resident set size = 2.416992 MB.
+Shared ngspice pages = 1.276367 MB.
+Text (code) pages = 1.184570 MB.
+Stack = 0 bytes.
+Library pages = 5.987305 MB.
+
+***** Operating Point Values (Generated from .op Statement) *****
+
+                      n3 = 1.000e+01
+                      n2 = 5.000e+00
+                      vin = 1.000e+00
+                      n0 = 1.000e+01
+                      n1 = 1.149e+00
+                      vout = 1.523e+00
+                      xi0_11 = 7.072e-08
+                      xi0_12 = 7.027e-01
+                      xi0_6 = 1.987e+01
+                      xi0_7 = 1.500e+00
+                      xi0_53 = 7.800e+00
+                      xi0_54 = 2.200e+00
+                      xi0_90 = -1.500e-01
+                      xi0_91 = 2.500e+01
+                      xi0_92 = -2.500e+01
+                      xi0_99 = 5.000e+00
+                      xi0_10 = 1.170e+00
+                      xi0_9 = 0.000e+00
+                      xi0_8 = 1.500e+00
+                      i_h_xi0_hlim = 4.288e-26
+                      i_v_xi0_vlim = -1.500e-04
+                      i_v_xi0_vln = -8.000e-16
+                      i_v_xi0_vlp = -8.000e-16
+                      i_v_xi0_ve = -1.874e-04
+                      i_v_xi0_vc = 8.000e-16
+                      i_v_xi0_vb = 1.987e-04
+                      i_v2 = -4.861e-03
+                      i_v0 = 3.735e-05
+                      i_v1 = -5.000e-04
+                      i_a$poly$e_xi0_egnd = 1.463e-04
+
+***************** End of Operating Point Values ******************
