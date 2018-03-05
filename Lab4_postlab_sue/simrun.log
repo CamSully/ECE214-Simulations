@@ -1,0 +1,94 @@
+
+Circuit: ***** spice netlist for cell 'lab4_postlab_sue' *****
+
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+No. of Data Columns : 29  
+
+No. of Data Rows : 1
+No. of Data Columns : 30  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vin                                         -1
+n0                                   -0.990533
+xi0.11                                -9.30656
+xi0.12                                     -10
+xi0.6                                 -19.6116
+xi0.7                                  8.50593
+vout                                   8.47677
+xi0.53                                     7.8
+xi0.54                                    -7.8
+xi0.90                                0.194393
+xi0.91                                      25
+xi0.92                                     -25
+n2                                         -10
+n1                                          10
+xi0.99                                       0
+xi0.10                                -1.13844
+xi0.9                                        0
+xi0.8                                  8.50593
+h.xi0.hlim#branch                 -5.55682e-26
+v.xi0.vlim#branch                  0.000194393
+v0#branch                          9.46727e-06
+v2#branch                           0.00952882
+v1#branch                          -0.00934279
+v.xi0.vln#branch                        -8e-16
+v.xi0.vlp#branch                        -8e-16
+v.xi0.ve#branch                          8e-16
+v.xi0.vc#branch                   -0.000184926
+v.xi0.vb#branch                   -0.000196116
+a$poly$e.xi0.egnd#branch_1_0      -0.000195503
+
+
+No. of Data Rows : 21021
+CPU time since last call: 0.436 seconds.
+
+Total CPU time: 0.436 seconds.
+
+Total DRAM available = 15954.636719 MB.
+DRAM currently available = 10525.863281 MB.
+Total ngspice program size = 9.999023 MB.
+Resident set size = 2.412109 MB.
+Shared ngspice pages = 1.269531 MB.
+Text (code) pages = 1.184570 MB.
+Stack = 0 bytes.
+Library pages = 5.987305 MB.
+
+***** Operating Point Values (Generated from .op Statement) *****
+
+                      vin = -1.000e+00
+                      n0 = -9.905e-01
+                      xi0_11 = -9.307e+00
+                      xi0_12 = -1.000e+01
+                      xi0_6 = -1.961e+01
+                      xi0_7 = 8.506e+00
+                      vout = 8.477e+00
+                      xi0_53 = 7.800e+00
+                      xi0_54 = -7.800e+00
+                      xi0_90 = 1.944e-01
+                      xi0_91 = 2.500e+01
+                      xi0_92 = -2.500e+01
+                      n2 = -1.000e+01
+                      n1 = 1.000e+01
+                      xi0_99 = 0.000e+00
+                      xi0_10 = -1.138e+00
+                      xi0_9 = 0.000e+00
+                      xi0_8 = 8.506e+00
+                      i_h_xi0_hlim = -5.557e-26
+                      i_v_xi0_vlim = 1.944e-04
+                      i_v0 = 9.467e-06
+                      i_v2 = 9.529e-03
+                      i_v1 = -9.343e-03
+                      i_v_xi0_vln = -8.000e-16
+                      i_v_xi0_vlp = -8.000e-16
+                      i_v_xi0_ve = 8.000e-16
+                      i_v_xi0_vc = -1.849e-04
+                      i_v_xi0_vb = -1.961e-04
+                      i_a$poly$e_xi0_egnd = -1.955e-04
+
+***************** End of Operating Point Values ******************
