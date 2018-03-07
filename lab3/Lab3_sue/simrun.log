@@ -14,13 +14,13 @@ CPU time since last call: 0.008 seconds.
 Total CPU time: 0.008 seconds.
 
 Total DRAM available = 15954.636719 MB.
-DRAM currently available = 12319.949219 MB.
-Total ngspice program size = 9.998047 MB.
-Resident set size = 2.387695 MB.
-Shared ngspice pages = 1.247070 MB.
+DRAM currently available = 12853.937500 MB.
+Total ngspice program size = 10.000000 MB.
+Resident set size = 2.414062 MB.
+Shared ngspice pages = 1.269531 MB.
 Text (code) pages = 1.184570 MB.
 Stack = 0 bytes.
-Library pages = 5.986328 MB.
+Library pages = 5.988281 MB.
 
 ***** Operating Point Values (Generated from .op Statement) *****
 

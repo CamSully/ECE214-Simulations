@@ -46,18 +46,18 @@ a$poly$e.xi0.egnd#branch_1_0      -0.000195503
 
 
 No. of Data Rows : 21021
-CPU time since last call: 0.436 seconds.
+CPU time since last call: 0.412 seconds.
 
-Total CPU time: 0.436 seconds.
+Total CPU time: 0.412 seconds.
 
 Total DRAM available = 15954.636719 MB.
-DRAM currently available = 10525.863281 MB.
-Total ngspice program size = 9.999023 MB.
-Resident set size = 2.412109 MB.
-Shared ngspice pages = 1.269531 MB.
+DRAM currently available = 13638.371094 MB.
+Total ngspice program size = 10.000000 MB.
+Resident set size = 2.347656 MB.
+Shared ngspice pages = 1.203125 MB.
 Text (code) pages = 1.184570 MB.
 Stack = 0 bytes.
-Library pages = 5.987305 MB.
+Library pages = 5.988281 MB.
 
 ***** Operating Point Values (Generated from .op Statement) *****
 

@@ -1,53 +1,43 @@
 
 Circuit: ***** spice netlist for cell 'lab2_sue' *****
 
-Error on line 24 : c_f_i_l o(__`> a_0a=_b__d8 i1_
- unknown parameter (_b__d8) 
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
-No. of Data Columns : 6  
+No. of Data Columns : 4  
 
-DC solution failed -
+No. of Data Rows : 1
+No. of Data Columns : 5  
 
-Last Node Voltages
-------------------
+Initial Transient Solution
+--------------------------
 
-Node                                   Last Voltage        Previous Iter
-----                                   ------------        -------------
-n0                                                0                    0
-va                                                0                    0
-vb                                                0                    0
-o(__`>                                            0                    0
-a_0a                                              0                    0
-v0#branch                                         0                    0
-
-No. of Data Columns : 7  
-
-Transient solution failed -
-
-Last Node Voltages
-------------------
-
-Node                                   Last Voltage        Previous Iter
-----                                   ------------        -------------
-n0                                                0                    0
-va                                                0                    0
-vb                                                0                    0
-o(__`>                                            0                    0
-a_0a                                              0                    0
-v0#branch                                         0                    0
+Node                                   Voltage
+----                                   -------
+n0                                           0
+va                                           0
+vb                                           0
+v0#branch                                    0
 
 
-CPU time since last call: 0.008 seconds.
+No. of Data Rows : 6001
+CPU time since last call: 0.280 seconds.
 
-Total CPU time: 0.008 seconds.
+Total CPU time: 0.280 seconds.
 
 Total DRAM available = 15954.636719 MB.
-DRAM currently available = 12071.660156 MB.
-Total ngspice program size = 9.494141 MB.
-Resident set size = 2.368164 MB.
-Shared ngspice pages = 1.228516 MB.
+DRAM currently available = 11356.242188 MB.
+Total ngspice program size = 10.000000 MB.
+Resident set size = 2.401367 MB.
+Shared ngspice pages = 1.256836 MB.
 Text (code) pages = 1.184570 MB.
 Stack = 0 bytes.
-Library pages = 5.986328 MB.
+Library pages = 5.988281 MB.
 
+***** Operating Point Values (Generated from .op Statement) *****
+
+                      n0 = 0.000e+00
+                      va = 0.000e+00
+                      vb = 0.000e+00
+                      i_v0 = 0.000e+00
+
+***************** End of Operating Point Values ******************

@@ -1,0 +1,46 @@
+proc SCHEMATIC_Lab5_prelab_sue {} {
+make global -name GND -origin {1540 1000}
+make TL082 -name xi0 -origin {1690 790}
+make TL082 -name xi1 -origin {2030 910}
+make global -name GND -origin {2090 990}
+make global -name GND -origin {1750 870}
+make global -name GND -origin {1910 740}
+make V_dc -name V0 -dc_voltage 10 -origin {1910 700}
+make name_net -name vsup -origin {1910 660}
+make name_net -name vsup -origin {2090 910}
+make name_net -name vsup -origin {1750 790}
+make name_net -name vsup -origin {1540 770}
+make R -orient R90 -name R3 -resistance 1.042k -origin {1900 930}
+make R -orient R90 -name R1 -resistance 12k -origin {1880 1030}
+make R -orient R90 -name R2 -resistance 20k -origin {1700 930}
+make R -orient RXY -name R4 -origin {1540 940}
+make R -orient RXY -name R5 -origin {1540 810}
+make C -orient R90 -name C0 -capacitance 0.1uF -origin {2070 840}
+make name_net -orient R90 -name vout2 -origin {2160 950}
+make name_net -orient R90 -name vout1 -origin {1820 880}
+  make_wire 1540 870 1600 870
+  make_wire 1600 810 1640 810
+  make_wire 1640 1030 1840 1030
+  make_wire 1640 930 1660 930
+  make_wire 1920 1030 2160 1030
+  make_wire 2110 840 2160 840
+  make_wire 1740 930 1820 930
+  make_wire 1820 930 1860 930
+  make_wire 1980 970 1600 970
+  make_wire 1600 810 1600 870
+  make_wire 1600 970 1600 870
+  make_wire 1970 840 2030 840
+  make_wire 1970 930 1980 930
+  make_wire 1970 930 1940 930
+  make_wire 1540 980 1540 1000
+  make_wire 1540 850 1540 870
+  make_wire 1540 870 1540 900
+  make_wire 1640 850 1640 930
+  make_wire 1640 930 1640 1030
+  make_wire 1970 840 1970 930
+  make_wire 2160 840 2160 950
+  make_wire 2160 950 2160 1030
+  make_wire 1820 830 1820 880
+  make_wire 1820 880 1820 930
+}
+

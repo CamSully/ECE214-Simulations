@@ -21,7 +21,6 @@ c4 gnd va 13p ic=0
 .tran 2.5e-08 0.00115 0.001 0
 .global gnd
 .param freq=40000
-ÈƐɘ̠Ϩߐྠᝰὀ✐丠鱀
 .options post=1 delmax=5p relv=1e-6 reli=1e-6 relmos=1e-6 method=gear
 .op
 

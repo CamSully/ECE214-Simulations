@@ -24,7 +24,7 @@ plot(Vin(1:4:end), Vout(1:4:end), 'b>', 'MarkerSize', 12);
 set(gca, 'fontsize', fs); % set font size
 ylabel('Output Voltage (V)', 'fontsize', fs); % label y-axis
 xlabel('Input Voltage (V)', 'fontsize', fs); % label x-axis
-title('ECE 214: Lab 4 - Schmitt Trigger'); % title
+title('Schmitt Trigger VTC (TL082 op amp)'); % title
 grid on; % add grid
 
 %% NGspice control statement and run NGspice
