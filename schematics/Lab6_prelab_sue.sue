@@ -1,0 +1,24 @@
+proc SCHEMATIC_Lab6_prelab_sue {} {
+make V_sin -name V0 -origin {3360 1720}
+make R -orient R90 -name R1 -resistance 50 -origin {3480 1600}
+make R -orient R90 -name R2 -resistance 0 -origin {3640 1600}
+make C -name C0 -capacitance 0.33uF -origin {3920 1790}
+make R -name R0 -resistance 0 -origin {3920 1650}
+make L -orient R270 -name L0 -inductance 1mH -origin {3800 1600}
+make name_net -name vin -origin {3560 1600}
+make name_net -name vc -origin {3920 1600}
+make global -name GND -origin {3660 1840}
+  make_wire 3360 1600 3440 1600
+  make_wire 3360 1600 3360 1680
+  make_wire 3680 1600 3760 1600
+  make_wire 3840 1600 3920 1600
+  make_wire 3920 1690 3920 1750
+  make_wire 3360 1760 3360 1840
+  make_wire 3920 1840 3920 1830
+  make_wire 3560 1600 3520 1600
+  make_wire 3560 1600 3600 1600
+  make_wire 3920 1600 3920 1610
+  make_wire 3660 1840 3360 1840
+  make_wire 3660 1840 3920 1840
+}
+
