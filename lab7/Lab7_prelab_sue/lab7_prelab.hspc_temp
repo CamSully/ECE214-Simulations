@@ -6,7 +6,7 @@
 ***** Temperature
 .temp 27
 **** added line below using 'hspc_addline' function ****
-.tran 10u 125m 25m
+.tran 1e-9 50e-6
 ***** Global variables
 .global gnd
 
