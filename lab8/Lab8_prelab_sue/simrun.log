@@ -1,0 +1,91 @@
+
+Circuit: ***** spice netlist for cell 'lab8_prelab_sue' *****
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+No. of Data Columns : 28  
+
+No. of Data Rows : 1
+No. of Data Columns : 29  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+n1                                          12
+n0                                          12
+vout                                 0.0877433
+x0.9                                 0.0877422
+x0.7                                         4
+x0.8                                 0.0131658
+vc2                                          4
+x0.4                                         0
+x0.5                                 -0.251757
+x0.10                                 -3.91226
+x0.11                                -0.251746
+x0.6                                 -0.251746
+x1.9                                        12
+x1.7                               2.17667e-32
+x1.8                               1.32628e-11
+vc1                                          0
+x1.4                                         0
+x1.5                                        12
+x1.10                                       12
+x1.11                                       12
+x1.6                                        12
+v.x1.vfi1#branch                             0
+v.x1.vfi2#branch                   9.98318e-33
+v.x0.vfi1#branch                             0
+v.x0.vfi2#branch                  -2.14918e-33
+e.x1.ev16#branch                        -2e-10
+e.x0.ev16#branch                       7.32101
+v0#branch                           -0.0122456
+
+
+No. of Data Rows : 25299
+CPU time since last call: 0.400 seconds.
+
+Total CPU time: 0.400 seconds.
+
+Total DRAM available = 15954.636719 MB.
+DRAM currently available = 11452.054688 MB.
+Total ngspice program size = 10.032227 MB.
+Resident set size = 2.404297 MB.
+Shared ngspice pages = 1.260742 MB.
+Text (code) pages = 1.184570 MB.
+Stack = 0 bytes.
+Library pages = 6.020508 MB.
+
+***** Operating Point Values (Generated from .op Statement) *****
+
+                      n1 = 8.774e-02
+                      n0 = 1.200e+01
+                      vout = 8.774e-02
+                      x0_9 = 8.774e-02
+                      x0_7 = 4.000e+00
+                      x0_8 = 1.317e-02
+                      vc2 = 4.000e+00
+                      x0_4 = 0.000e+00
+                      x0_5 = -2.518e-01
+                      x0_10 = -3.912e+00
+                      x0_11 = -2.517e-01
+                      x0_6 = -2.517e-01
+                      x1_9 = 8.774e-02
+                      x1_7 = 4.000e+00
+                      x1_8 = 1.317e-02
+                      vc1 = 4.000e+00
+                      x1_4 = 0.000e+00
+                      x1_5 = -2.518e-01
+                      x1_10 = -3.912e+00
+                      x1_11 = -2.517e-01
+                      x1_6 = -2.517e-01
+                      i_v_x1_vfi1 = 0.000e+00
+                      i_v_x1_vfi2 = -2.149e-33
+                      i_v_x0_vfi1 = 0.000e+00
+                      i_v_x0_vfi2 = -2.149e-33
+                      i_e_x1_ev16 = 7.321e+00
+                      i_e_x0_ev16 = 7.321e+00
+                      i_v0 = -2.409e-02
+
+***************** End of Operating Point Values ******************

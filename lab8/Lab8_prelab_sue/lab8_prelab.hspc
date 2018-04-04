@@ -6,7 +6,9 @@
 ***** Temperature
 .temp 27
 **** added line below using 'hspc_addline' function ****
-.tran 100e-9 6e-3 1e-3
+.tran 1e-6 25e-3 0e-3
+
+
 ***** Global variables
 .global gnd
 
@@ -18,3 +20,5 @@
 ***** Have operating point information sent to output file
 .op
 
+***** SPECIAL LINE TO PREVENT CIRCUIT FROM WANTING TO DEAL WITH DC VOLTAGES
+.ic v(vc1) = 0
