@@ -10,14 +10,14 @@ make name_net -name vsup -origin {1910 660}
 make name_net -name vsup -origin {2090 910}
 make name_net -name vsup -origin {1750 790}
 make name_net -name vsup -origin {1540 770}
-make R -orient R90 -name R3 -resistance 1.042k -origin {1900 930}
 make R -orient R90 -name R1 -resistance 12k -origin {1880 1030}
 make R -orient R90 -name R2 -resistance 20k -origin {1700 930}
-make R -orient RXY -name R4 -origin {1540 940}
-make R -orient RXY -name R5 -origin {1540 810}
 make C -orient R90 -name C0 -capacitance 0.1uF -origin {2070 840}
 make name_net -orient R90 -name vout2 -origin {2160 950}
 make name_net -orient R90 -name vout1 -origin {1820 880}
+make R -orient RXY -name R5 -resistance 412 -noise_enable 358 -origin {1540 810}
+make R -orient R90 -name R3 -origin {1900 930}
+make R -orient RXY -name R4 -resistance 358 -origin {1540 940}
   make_wire 1540 870 1600 870
   make_wire 1600 810 1640 810
   make_wire 1640 1030 1840 1030

@@ -1,0 +1,57 @@
+proc SCHEMATIC_Boost_Converter_sue {} {
+make global -name GND -origin {13600 6740}
+make input -name DC_IN -origin {13260 6480}
+make input -name FG_IN -origin {13260 6560}
+make output -name Vout -origin {13940 6480}
+make IRFD110 -name X0 -origin {13600 6560}
+make Diode_1N4004 -orient R270 -name D0 -origin {13680 6480}
+make L -orient R270 -name L0 -inductance 1mH -origin {13450 6480}
+make R -orient R90 -name R0 -resistance 50 -origin {13460 6560}
+make R -name R1 -resistance 1 -origin {13600 6670}
+make C -name C0 -capacitance 10uF -origin {13760 6600}
+make R -name R2 -resistance 510 -origin {13860 6550}
+make R -orient R90 -name R3 -resistance 4.89 -origin {13330 6480}
+make R -name R4 -resistance 510 -origin {13940 6550}
+make R -name R5 -resistance 510 -origin {13940 6670}
+make R -name R6 -resistance 510 -origin {13860 6670}
+  make_wire 13370 6480 13410 6480
+  make_wire 13500 6560 13540 6560
+  make_wire 13490 6480 13600 6480
+  make_wire 13650 6480 13600 6480
+  make_wire 13600 6600 13600 6630
+  make_wire 13600 6710 13600 6740
+  make_wire 13710 6480 13760 6480
+  make_wire 13600 6480 13600 6520
+  make_wire 13940 6710 13940 6740
+  make_wire 13940 6630 13940 6590
+  make_wire 13940 6480 13860 6480
+  make_wire 13860 6480 13860 6510
+  make_wire 13860 6590 13860 6630
+  make_wire 13860 6710 13860 6740
+  make_wire 13760 6740 13860 6740
+  make_wire 13760 6740 13600 6740
+  make_wire 13860 6740 13940 6740
+  make_wire 13940 6480 13940 6510
+  make_wire 13860 6480 13760 6480
+  make_wire 13260 6480 13290 6480
+  make_wire 13420 6560 13260 6560
+  make_wire 13760 6640 13760 6740
+  make_wire 13760 6480 13760 6560
+}
+
+proc ICON_Boost_Converter_sue args {
+
+  icon_setup $args {{origin {0 0}} {orient R0} {name x}}
+icon_term -type input -origin {-100 0} -name DC_IN
+icon_term -type input -origin {-100 20} -name FG_IN
+icon_term -type output -origin {100 0} -name Vout
+icon_property -origin {-90 0} -label DC_IN
+icon_property -origin {-90 20} -label FG_IN
+icon_property -origin {90 0} -anchor e -label Vout
+icon_property -origin {-90 -50} -label {$name}
+icon_property -origin {-90 -30} -label Boost_Converter_sue
+  icon_line -100 -40 100 -40 100 40 -100 40 -100 -40
+  icon_property -origin {-90 110} -type user -name name -default x
+
+}
+

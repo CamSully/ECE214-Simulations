@@ -2,10 +2,6 @@ proc SCHEMATIC_Lab8_prelab_sue {} {
 make R -name R0 -origin {400 360}
 make R -name R5 -origin {1120 360}
 make name_net -orient R90 -name vc2 -origin {640 440}
-make 2N7000 -name X0 -origin {1120 530}
-make 2N7000 -name X1 -origin {400 530}
-make C -orient R90 -name C0 -capacitance 100nF -origin {520 440}
-make C -orient R90 -name C1 -capacitance 100nF -origin {1000 440}
 make R -name R1 -resistance 60k -origin {640 360}
 make R -name R2 -resistance 30k -origin {640 520}
 make R -name R3 -resistance 60k -origin {880 360}
@@ -16,6 +12,10 @@ make name_net -orient R270 -name vc1 -origin {340 530}
 make name_net -orient R270 -name vc1 -origin {880 440}
 make global -name GND -origin {640 600}
 make V_dc -name V0 -dc_voltage 12 -ac_voltage 0 -origin {240 440}
+make 2N7000_mod -name X0 -origin {1120 530}
+make 2N7000_mod -name X1 -origin {400 530}
+make C -orient R90 -name C0 -capacitance 1.56nF -origin {520 440}
+make C -orient R90 -name C1 -capacitance 0.51nF -origin {1000 440}
   make_wire 240 400 240 280
   make_wire 240 280 400 280
   make_wire 400 280 400 320
@@ -29,22 +29,22 @@ make V_dc -name V0 -dc_voltage 12 -ac_voltage 0 -origin {240 440}
   make_wire 1120 600 1120 570
   make_wire 400 440 480 440
   make_wire 880 440 960 440
-  make_wire 400 400 400 440
-  make_wire 560 440 640 440
   make_wire 400 280 640 280
   make_wire 880 280 640 280
   make_wire 400 600 640 600
-  make_wire 640 400 640 440
-  make_wire 640 440 640 480
   make_wire 1040 440 1120 440
-  make_wire 640 600 880 600
-  make_wire 880 600 1120 600
-  make_wire 1120 400 1120 440
   make_wire 400 570 400 600
   make_wire 880 280 880 320
   make_wire 880 400 880 440
   make_wire 880 440 880 480
-  make_wire 1120 490 1120 440
-  make_wire 400 490 400 440
+  make_wire 1120 400 1120 440
+  make_wire 1120 440 1120 490
+  make_wire 640 600 880 600
+  make_wire 880 600 1120 600
+  make_wire 560 440 640 440
+  make_wire 640 400 640 440
+  make_wire 640 440 640 480
+  make_wire 400 400 400 440
+  make_wire 400 440 400 490
 }
 

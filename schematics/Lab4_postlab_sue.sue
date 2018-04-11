@@ -1,34 +1,34 @@
 proc SCHEMATIC_Lab4_postlab_sue {} {
 make global -name GND -origin {1800 1100}
 make global -orient RXY -name GND -origin {1800 850}
-make R -orient R90 -name R0 -origin {1610 800}
+make R -orient R90 -name R0 -origin {1610 790}
 make TL082 -name xi0 -origin {1740 940}
 make V_dc -orient RXY -name V1 -dc_voltage 10 -origin {1800 890}
 make global -name GND -origin {1670 1010}
-make global -name GND -origin {1520 920}
+make global -name GND -origin {1500 920}
 make name_net -orient R90 -name vout -origin {1910 980}
-make name_net -name vin -origin {1520 800}
+make name_net -name vin -origin {1500 790}
 make R -orient R90 -name R1 -resistance 1meg -origin {1800 720}
 make C -orient R270 -name C0 -capacitance 0.1u -origin {1800 790}
 make V_dc -name V2 -dc_voltage -10 -origin {1800 1060}
-make V_pulse -name V0 -initial_voltage -1V -rise_time 0.1us -fall_time 0.1us -origin {1520 880}
+make V_pulse -name V0 -initial_voltage -1V -rise_time 1ms -fall_time 0.1us -pulse_width 0.1us -origin {1500 860}
   make_wire 1670 1010 1670 1000
   make_wire 1690 960 1670 960
   make_wire 1670 790 1760 790
-  make_wire 1650 800 1670 800
-  make_wire 1520 800 1570 800
+  make_wire 1650 790 1670 790
   make_wire 1840 720 1890 720
   make_wire 1840 790 1890 790
   make_wire 1870 980 1890 980
   make_wire 1890 980 1910 980
-  make_wire 1520 800 1520 840
   make_wire 1670 1000 1690 1000
   make_wire 1800 930 1800 940
   make_wire 1890 720 1890 790
   make_wire 1890 790 1890 980
-  make_wire 1670 720 1670 790
   make_wire 1670 720 1760 720
-  make_wire 1670 790 1670 800
-  make_wire 1670 800 1670 960
+  make_wire 1570 790 1500 790
+  make_wire 1670 720 1670 790
+  make_wire 1670 790 1670 960
+  make_wire 1500 900 1500 920
+  make_wire 1500 790 1500 820
 }
 
