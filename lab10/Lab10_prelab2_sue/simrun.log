@@ -1,22 +1,22 @@
 
-Circuit: ***** spice netlist for cell 'lab9_prelab_sue' *****
+Circuit: ***** spice netlist for cell 'lab10_prelab2_sue' *****
 
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
-No. of Data Columns : 46  
+No. of Data Columns : 34  
 
 No. of Data Rows : 1
-No. of Data Columns : 47  
+No. of Data Columns : 35  
 
 Initial Transient Solution
 --------------------------
 
 Node                                   Voltage
 ----                                   -------
-vout                                   11.2145
-xi0.n0                                      12
 n0                                          12
-n1                                   0.0652204
+n1                                          12
+xi0.n0                                      12
+vin                                  0.0652204
 xi0.vc2                                      4
 xi0.vc1                                      0
 xi0.x0.9                             0.0652193
@@ -35,52 +35,40 @@ xi0.x1.5                                    12
 xi0.x1.10                                   12
 xi0.x1.11                                   12
 xi0.x1.6                                    12
-xi1.x0.9                               11.8869
-xi1.x0.7                             0.0652204
-xi1.x0.8                           1.18887e-05
-xi1.n2                             1.18887e-05
-xi1.n1                                 11.8869
-xi1.x0.4                                     0
-xi1.x0.5                               11.8217
-xi1.x0.10                              11.8217
-xi1.x0.11                              11.8217
-xi1.x0.6                               11.8217
-xi1.n0                                 11.8869
-xi1.n4                                 5.60723
-xi1.n3                                 5.60723
-v.xi1.x0.vfi1#branch                         0
-v.xi1.x0.vfi2#branch                9.9824e-33
+n2                                          12
+n3                                          12
+n4                                          12
+n5                                          12
+vout                                        12
 v.xi0.x1.vfi1#branch                         0
 v.xi0.x1.vfi2#branch               9.98318e-33
 v.xi0.x0.vfi1#branch                         0
 v.xi0.x0.vfi2#branch              -2.14977e-33
-l.xi1.l0#branch                     -0.0231225
-e.xi1.x0.ev16#branch                    -2e-10
 e.xi0.x1.ev16#branch                    -2e-10
 e.xi0.x0.ev16#branch                   7.36593
-v0#branch                           -0.0353906
+v0#branch                           -0.0122681
 
 
-No. of Data Rows : 172937
-CPU time since last call: 22.484 seconds.
+No. of Data Rows : 350
+CPU time since last call: 2.024 seconds.
 
-Total CPU time: 22.484 seconds.
+Total CPU time: 2.024 seconds.
 
 Total DRAM available = 15954.636719 MB.
-DRAM currently available = 12747.757812 MB.
-Total ngspice program size = 10.030273 MB.
-Resident set size = 2.352539 MB.
-Shared ngspice pages = 1.210938 MB.
+DRAM currently available = 11381.910156 MB.
+Total ngspice program size = 10.032227 MB.
+Resident set size = 2.398438 MB.
+Shared ngspice pages = 1.253906 MB.
 Text (code) pages = 1.184570 MB.
 Stack = 0 bytes.
-Library pages = 6.018555 MB.
+Library pages = 6.020508 MB.
 
 ***** Operating Point Values (Generated from .op Statement) *****
 
-                      vout = 1.121e+01
-                      xi0_n0 = 6.522e-02
                       n0 = 1.200e+01
-                      n1 = 6.522e-02
+                      n1 = 1.200e+01
+                      xi0_n0 = 6.522e-02
+                      vin = 6.522e-02
                       xi0_vc2 = 4.000e+00
                       xi0_vc1 = 4.000e+00
                       xi0_x0_9 = 6.522e-02
@@ -99,29 +87,17 @@ Library pages = 6.018555 MB.
                       xi0_x1_10 = -3.935e+00
                       xi0_x1_11 = -2.518e-01
                       xi0_x1_6 = -2.518e-01
-                      xi1_x0_9 = 1.189e+01
-                      xi1_x0_7 = 6.522e-02
-                      xi1_x0_8 = 1.189e-05
-                      xi1_n2 = 1.189e-05
-                      xi1_n1 = 1.189e+01
-                      xi1_x0_4 = 0.000e+00
-                      xi1_x0_5 = 1.182e+01
-                      xi1_x0_10 = 1.182e+01
-                      xi1_x0_11 = 1.182e+01
-                      xi1_x0_6 = 1.182e+01
-                      xi1_n0 = 1.189e+01
-                      xi1_n4 = 5.607e+00
-                      xi1_n3 = 5.607e+00
-                      i_v_xi1_x0_vfi1 = 0.000e+00
-                      i_v_xi1_x0_vfi2 = 9.982e-33
+                      n2 = 1.200e+01
+                      n3 = 1.200e+01
+                      n4 = 1.200e+01
+                      n5 = 1.200e+01
+                      vout = 1.200e+01
                       i_v_xi0_x1_vfi1 = 0.000e+00
                       i_v_xi0_x1_vfi2 = -2.150e-33
                       i_v_xi0_x0_vfi1 = 0.000e+00
                       i_v_xi0_x0_vfi2 = -2.150e-33
-                      i_l_xi1_l0 = -2.312e-02
-                      i_e_xi1_x0_ev16 = -2.000e-10
                       i_e_xi0_x1_ev16 = 7.366e+00
                       i_e_xi0_x0_ev16 = 7.366e+00
-                      i_v0 = -4.726e-02
+                      i_v0 = -2.414e-02
 
 ***************** End of Operating Point Values ******************

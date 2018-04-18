@@ -1,10 +1,10 @@
 addpath('/usr/local/CppSim/CppSimShared/HspiceToolbox');
 clear variables;
-close all;
+% close all;
 hspc_filename = 'lab9_prelab.hspc';
 
 %% Transient analysis
-hspc_addline('.tran 10e-6 35e-3 5e-3', hspc_filename);
+hspc_addline('.tran 100e-4 250e-3 100e-3', hspc_filename);
 ngsim(hspc_filename);
 data = loadsig('simrun.raw');
 

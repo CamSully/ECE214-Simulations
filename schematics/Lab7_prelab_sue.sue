@@ -4,19 +4,14 @@ make Diode_1N4004 -orient R270 -name D0 -origin {4800 2050}
 make L -orient R270 -name L0 -inductance 1mH -origin {4570 2050}
 make R -orient R90 -name R3 -resistance 50 -origin {4580 2130}
 make R -name R0 -resistance 1 -origin {4720 2240}
-make C -name C0 -capacitance 10uF -origin {4880 2160}
+make C -name C0 -capacitance 10uF -origin {4880 2230}
 make global -name GND -origin {4600 2310}
-make name_net -name vc -origin {4930 2050}
+make name_net -name vc -origin {4960 2050}
 make V_dc -name V1 -dc_voltage 12 -ac_voltage 0 -origin {4340 2180}
-make R -name R1 -resistance 510 -origin {4980 2120}
-make name_net -name vout -origin {5190 2050}
+make R -name R1 -resistance 497 -origin {4960 2160}
+make V_pulse -name V0 -final_voltage 5V -rise_time 0 -fall_time 0 -pulse_width 19.9us -period 36.4us -origin {4480 2210}
 make R -orient R90 -name R2 -resistance 4.89 -origin {4420 2050}
-make R -name R4 -resistance 510 -origin {5060 2120}
-make R -name R5 -resistance 510 -origin {5060 2240}
-make R -name R6 -resistance 510 -origin {4980 2240}
-make R -orient R90 -name R7 -resistance 11k -origin {5130 2050}
-make C -name C1 -capacitance 1.5nF -origin {5190 2160}
-make V_pulse -name V0 -final_voltage 5V -rise_time 0 -fall_time 0 -pulse_width 24.94us -period 40.16us -origin {4480 2210}
+make R -name R4 -resistance 2 -origin {4880 2120}
   make_wire 4340 2310 4340 2220
   make_wire 4460 2050 4530 2050
   make_wire 4340 2050 4340 2140
@@ -30,28 +25,17 @@ make V_pulse -name V0 -final_voltage 5V -rise_time 0 -fall_time 0 -pulse_width 2
   make_wire 4720 2280 4720 2310
   make_wire 4480 2310 4600 2310
   make_wire 4600 2310 4720 2310
-  make_wire 4830 2050 4880 2050
   make_wire 4720 2050 4720 2090
-  make_wire 4880 2050 4930 2050
-  make_wire 4930 2050 4980 2050
-  make_wire 5060 2280 5060 2310
-  make_wire 5060 2200 5060 2160
-  make_wire 5060 2050 4980 2050
-  make_wire 4980 2050 4980 2080
-  make_wire 5060 2050 5090 2050
-  make_wire 5190 2310 5190 2200
-  make_wire 5170 2050 5190 2050
-  make_wire 4980 2160 4980 2200
-  make_wire 4980 2280 4980 2310
-  make_wire 5060 2050 5060 2080
-  make_wire 5190 2050 5190 2120
-  make_wire 4980 2310 5060 2310
-  make_wire 5060 2310 5190 2310
-  make_wire 4880 2310 4980 2310
-  make_wire 4880 2310 4720 2310
   make_wire 4480 2130 4540 2130
   make_wire 4480 2250 4480 2310
-  make_wire 4880 2050 4880 2120
-  make_wire 4880 2200 4880 2310
+  make_wire 4960 2050 4960 2120
+  make_wire 4960 2200 4960 2310
+  make_wire 4880 2310 4960 2310
+  make_wire 4880 2310 4720 2310
+  make_wire 4880 2270 4880 2310
+  make_wire 4880 2050 4960 2050
+  make_wire 4880 2050 4830 2050
+  make_wire 4880 2160 4880 2190
+  make_wire 4880 2050 4880 2080
 }
 

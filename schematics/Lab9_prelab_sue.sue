@@ -1,20 +1,20 @@
 proc SCHEMATIC_Lab9_prelab_sue {} {
 make global -name GND -origin {400 480}
-make R -name R0 -resistance 10k -origin {1120 420}
+make R -name R0 -resistance 10k -origin {1400 420}
 make Multivibrator_sue -name xi0 -origin {620 370}
 make Boost_Converter_sue -name xi1 -origin {900 360}
-make global -name GND -origin {1120 480}
+make global -name GND -origin {1400 470}
 make V_dc -name V0 -dc_voltage 12 -ac_voltage 0 -origin {400 440}
-make name_net -name vout -origin {1120 360}
+make name_net -name vout -origin {1400 360}
   make_wire 400 380 520 380
   make_wire 720 380 800 380
   make_wire 400 320 750 320
   make_wire 750 320 750 360
-  make_wire 1000 360 1120 360
-  make_wire 1120 460 1120 480
-  make_wire 1120 360 1120 380
   make_wire 750 360 800 360
   make_wire 400 320 400 380
   make_wire 400 380 400 400
+  make_wire 1400 460 1400 470
+  make_wire 1400 360 1400 380
+  make_wire 1400 360 1000 360
 }
 

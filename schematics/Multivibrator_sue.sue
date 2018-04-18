@@ -14,8 +14,8 @@ make 2N7000_mod -name X0 -origin {920 110}
 make 2N7000_mod -name X1 -origin {200 110}
 make input -name DC_IN -origin {200 -140}
 make output -name Vout -origin {920 20}
-make C -orient R90 -name C1 -capacitance 0.51nF -origin {800 20}
 make C -orient R90 -name C0 -capacitance 1.56nF -origin {320 20}
+make C -orient R90 -name C1 -capacitance 0.51nF -origin {800 20}
   make_wire 440 -140 440 -100
   make_wire 680 -140 920 -140
   make_wire 920 -140 920 -100
@@ -32,10 +32,6 @@ make C -orient R90 -name C0 -capacitance 1.56nF -origin {320 20}
   make_wire 680 20 680 60
   make_wire 680 180 920 180
   make_wire 360 20 440 20
-  make_wire 440 -20 440 20
-  make_wire 440 20 440 60
-  make_wire 200 -20 200 20
-  make_wire 200 20 200 70
   make_wire 200 150 200 180
   make_wire 200 -140 200 -100
   make_wire 920 -20 920 20
@@ -43,9 +39,15 @@ make C -orient R90 -name C0 -capacitance 1.56nF -origin {320 20}
   make_wire 440 140 440 180
   make_wire 440 180 560 180
   make_wire 560 180 680 180
+  make_wire 440 -20 440 20
+  make_wire 440 20 440 60
+  make_wire 200 -20 200 20
+  make_wire 200 20 200 70
 }
 
 proc ICON_Multivibrator_sue args {
+
+
   icon_setup $args {{origin {0 0}} {orient R0} {name x}}
 icon_term -type input -origin {-100 10} -name DC_IN
 icon_term -type output -origin {100 10} -name Vout
@@ -55,5 +57,7 @@ icon_property -origin {-90 -40} -label {$name}
 icon_property -origin {-90 -20} -label Multivibrator_sue
   icon_line -100 -30 100 -30 100 30 -100 30 -100 -30
   icon_property -origin {-90 100} -type user -name name -default x
+
+
 }
 

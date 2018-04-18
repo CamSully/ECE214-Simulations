@@ -1,0 +1,55 @@
+proc SCHEMATIC_Lab10_prelab2_sue {} {
+make name_net -name vin -origin {410 230}
+make global -name GND -origin {140 440}
+make Diode_1N4004 -orient RXY -name D0 -origin {590 290}
+make Multivibrator_sue -name xi0 -origin {280 220}
+make C -orient R90 -name C1 -origin {490 230}
+make V_dc -name V0 -dc_voltage 12 -origin {140 400}
+make C -orient R90 -name C0 -origin {680 350}
+make Diode_1N4004 -name D1 -origin {770 280}
+make C -orient R90 -name C2 -origin {870 230}
+make Diode_1N4004 -orient RXY -name D2 -origin {970 290}
+make Diode_1N4004 -name D3 -origin {1120 280}
+make Diode_1N4004 -orient RXY -name D4 -origin {1290 290}
+make C -orient R90 -name C3 -origin {1040 350}
+make C -orient R90 -name C4 -origin {1200 230}
+make C -orient R90 -name C5 -origin {1370 350}
+make Diode_1N4004 -name D6 -origin {1450 290}
+make name_net -orient R90 -name vout -origin {1450 350}
+  make_wire 140 210 180 210
+  make_wire 590 230 590 260
+  make_wire 410 230 380 230
+  make_wire 410 230 450 230
+  make_wire 180 210 180 230
+  make_wire 590 320 590 350
+  make_wire 140 210 140 350
+  make_wire 140 350 140 360
+  make_wire 140 350 590 350
+  make_wire 530 230 590 230
+  make_wire 590 350 640 350
+  make_wire 770 230 770 250
+  make_wire 770 310 770 350
+  make_wire 590 230 770 230
+  make_wire 720 350 770 350
+  make_wire 970 320 970 350
+  make_wire 970 230 970 260
+  make_wire 770 230 830 230
+  make_wire 910 230 970 230
+  make_wire 770 350 970 350
+  make_wire 970 350 1000 350
+  make_wire 1120 350 1080 350
+  make_wire 970 230 1120 230
+  make_wire 1120 230 1160 230
+  make_wire 1290 350 1120 350
+  make_wire 1290 350 1330 350
+  make_wire 1290 230 1240 230
+  make_wire 1290 230 1290 260
+  make_wire 1120 230 1120 250
+  make_wire 1120 310 1120 350
+  make_wire 1450 230 1450 260
+  make_wire 1290 320 1290 350
+  make_wire 1410 350 1450 350
+  make_wire 1290 230 1450 230
+  make_wire 1450 320 1450 350
+}
+

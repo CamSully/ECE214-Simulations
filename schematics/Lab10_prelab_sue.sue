@@ -1,0 +1,30 @@
+proc SCHEMATIC_Lab10_prelab_sue {} {
+make Diode_1N4004 -orient RXY -name D0 -origin {1370 570}
+make Diode_1N4004 -orient RXY -name D1 -origin {1370 430}
+make C -name C1 -origin {1600 520}
+make Multivibrator_sue -name xi0 -origin {1060 490}
+make C -orient R90 -name C0 -origin {1270 500}
+make name_net -name vout -origin {1600 380}
+make name_net -name vin -origin {1190 500}
+make name_net -name vc1 -origin {1340 500}
+make V_dc -name V0 -dc_voltage 12 -origin {920 670}
+make global -name GND -origin {920 710}
+  make_wire 920 480 960 480
+  make_wire 1370 460 1370 500
+  make_wire 1370 500 1370 540
+  make_wire 1370 380 1370 400
+  make_wire 920 620 1370 620
+  make_wire 1370 620 1600 620
+  make_wire 1370 380 1600 380
+  make_wire 1600 380 1600 480
+  make_wire 1190 500 1160 500
+  make_wire 1190 500 1230 500
+  make_wire 1340 500 1310 500
+  make_wire 1340 500 1370 500
+  make_wire 960 480 960 500
+  make_wire 1370 600 1370 620
+  make_wire 1600 560 1600 620
+  make_wire 920 480 920 620
+  make_wire 920 620 920 630
+}
+
